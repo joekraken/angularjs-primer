@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>service vs factory</title>
+        <link rel="stylesheet" href="styles/art.css">
+    </head>
+    <body ng-app="providerApp">
+        <!-- example of a controller using a service -->        
+        <div ng-controller='serviceCtrl' class='border'>
+            <div>{{dataFromService.value}} is based on:</div>
+            <div>{{dataFromService.pattern}} provides 1 global/static instance for the entire app</div>
+        </div>
+        <br/>
+        <!-- example of a controller using a factory -->
+        <div ng-controller='factoryCtrl' class='border'>
+            <div>{{dataFromFactory.value}} is based on:</div>   
+            <div>{{dataFromFactory.pattern}} provides a new instance when invoked</div>         
+        </div>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js'></script>
+        <!--<script src="scripts/angular.min.js"></script>-->
+        <script src="app.js"></script>
+        <script src='scripts/service.js'></script>
+        <script src='scripts/factory.js'></script>
+        <script src='scripts/controllers.js'></script>
+    </body>
+</html>

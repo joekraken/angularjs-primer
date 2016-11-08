@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>Demo switching views with routing</title>
+</head>
+<body>
+    <div ng-app="mainMod">
+        <h2>Show Tasks</h2>
+        <!-- HTML navbar using Bootstrap -->
+        <nav class="navbar nav-default">
+            <ul class="nav nav-pills">
+                <li><a href="#allTasks">all</a></li>
+                <li><a href="#completedTasks">completed</a></li>
+                <li><a href="#incompleteTasks">incompleted</a></li>
+            </ul>
+        </nav>
+        <!-- list the steps of a process -->           
+        <table class="table table-striped table-bordered">
+             <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                </tr>
+              </thead>
+              <!-- angular ng-view where templates are injected -->
+              <tbody ng-view></tbody>
+        </table>
+        
+        <!-- template for showing all tasks -->
+        <script type="text/ng-template" id="allTasks.html">
+              <tr ng-repeat="step in allsteps">
+                    <td>
+                        <span>{{$index}}</span>
+                    </td>
+                    <td>
+                        <span ng-bind="step.title"></span>
+                    </td>
+                    <td>
+                        <span ng-bind="step.description"></span>                
+                    </td>
+                <tr>
+        </script>
+        <!-- template for showing completed tasks -->
+        <script type="text/ng-template" id="doneTasks.html">
+               <tr ng-repeat="step in donesteps" class="done">
+                    <td>
+                        <span>{{$index}}</span>
+                    </td>
+                    <td>
+                        <span ng-bind="step.title"></span>
+                    </td>
+                    <td>
+                        <span ng-bind="step.description"></span>                
+                    </td>
+                <tr>
+        </script>
+        <!-- template for showing incomplete tasks -->
+        <script type="text/ng-template" id="notdoneTasks.html">
+               <tr ng-repeat="step in todosteps" class="notdone">
+                    <td>
+                        <span>{{$index}}</span>
+                    </td>
+                    <td>
+                        <span ng-bind="step.title"></span>
+                    </td>
+                    <td>
+                        <span ng-bind="step.description"></span>                
+                    </td>
+                <tr>
+        </script>
+    </div>
+    <!-- cdn libraries -->
+<!--    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>-->
+    <!-- local angular libraries -->   
+    <script src="../../scripts/angular.min.js"></script>
+    <script src="../../scripts/angular-route.min.js"></script>
+    <!-- local bootstrap libraries -->
+    <link href="../../styles/bootstrap.css" rel="stylesheet"/>
+    <link href="../../styles/bootstrap-theme.css" rel="stylesheet"/>
+    <link href="./viewstyles.css" rel="stylesheet"/>
+    <!-- local custom AngularJS script -->
+    <script src="./viewscript.js"></script>
+</body>
+</html>

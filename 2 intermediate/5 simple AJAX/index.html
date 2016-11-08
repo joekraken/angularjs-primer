@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Angular AJAX</title>
+        <link rel="stylesheet" href="styles/art.css">
+    </head>
+    <body ng-app="ajaxApp">
+        <div ng-controller='ajaxCtrl' class='border'>
+            <div>data returned from api call</div>
+            <div>{{data | json}}</div>
+            <!--<div>{{getCharacterById(1)}}</div>-->
+        </div>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js'></script>
+        <!--<script src="scripts/angular.min.js"></script>-->
+        <script src="app.js"></script>
+        <script src='scripts/factory.js'></script>
+        <script src='scripts/controller.js'></script>
+    </body>
+</html>

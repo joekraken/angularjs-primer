@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang='en' xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset='utf-8'>
+	<title>Consuming Web Services</title>
+</head>
+<!--  -->
+<body ng-app="topStoryApp">
+	<!-- angular controller to get link for top story of the day -->
+	<div ng-controller="topStoryCtrl">
+		Top Story is <a href="" ng-click="gotostory(storyInfo.url)">{{storyInfo.title}}</a>
+	</div>
+	<!-- import AngularJS library from CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<!-- import local custom AngularJS library -->
+	<script src="introWebService.js"></script>
+</body>
+</html>

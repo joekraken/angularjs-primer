@@ -1,0 +1,25 @@
+
+.grayBorder {
+	border: solid 0.2em gray;
+	margin: 0.5em;
+}
+
+/* styles for totals of steps completed */
+.blueBorder {
+	border: solid 0.2em blue;
+	margin: 0.5em;
+}
+
+.Green {
+	background-color: lightgreen;
+}
+.Orange {
+	background-color: lightsalmon;
+}
+
+.Italic {
+	font-style: italic;
+}
+.Regular {
+	font-style: normal;
+}

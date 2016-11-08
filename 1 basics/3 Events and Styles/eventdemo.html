@@ -1,0 +1,55 @@
+<html ng-app="mainApp">
+<head>
+    <title>Basic Styles and Events</title>
+</head>
+<body>
+    <!-- ng-controller defines the scope where controller is active -->
+    <div ng-controller="defaultCtrl">
+        <!-- standard html table -->
+        <table class="grayBorder">
+            <!-- column names -->
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Completed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- ng-class and ng-style are for applying css styles -->
+                <tr ng-repeat="step in steps" ng-class ng-class-even="'Green'" ng-class-odd="'Orange'"
+                    ng-mouseenter="mouseEvent($event)"
+                    ng-mouseleave="mouseEvent($event)">
+                    <td>
+                        <!-- $index the index of an item in the list -->
+                        <span>{{$index}}</span>
+                    </td>
+                    <td>
+                        <span ng-bind="step.title"></span>
+                    </td>
+                    <td>
+                        <span ng-bind="step.description"></span>                
+                    </td>
+                    <td>
+                        <span ng-bind="step.completed"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- totals and such -->
+        <div ng-style="{{functionMyStyle()}}">
+            Number of completed steps : 
+            <span ng-bind="completedSteps()"></span>
+            </br>
+            Incomplete steps :
+            <span ng-bind="todoSteps()"></span>                
+        </div>
+    </div>
+    <!-- CDN for AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <!-- local custom script -->
+    <script src="./eventscript.js"></script>
+    <link href="./eventstyles.css" type="text/css" rel="stylesheet"></link>        
+</body>
+</html>

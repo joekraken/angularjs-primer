@@ -1,0 +1,26 @@
+{
+  "name": "routingapp",
+  "version": "0.1.0",
+  "description": "routing example using angular",
+  "main": "app.js",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "insert git repo"
+  },
+  "keywords": [
+    "angular",
+    "html",
+    "css",
+    "javascript",
+    "bootstrap"
+  ],
+  "author": "jk",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  }
+}

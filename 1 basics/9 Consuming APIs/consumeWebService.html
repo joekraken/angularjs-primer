@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset='utf-8'>
+	<title>Consuming API service</title>
+</head>
+<body ng-app="selectStoryApp">
+    <!-- angular controller to get list of stories -->
+	<div ng-controller="selectStoryCtrl">
+		<!-- populate a drop down with story IDs and list for index change -->
+		<select ng-model="selectedStory" ng-options="story.title for story in storyList" ng-change="update(selectedStory)">
+			<!-- default placeholder -->
+			<option value="">--choose an id--</option>
+		</select>
+		</br>
+		<div>{{selectedStory}}</div>
+		<!-- provide link to story and gotostory() opens in a new browser tab -->
+		<div>Selected story is <a href="" ng-click="gotostory(storyInfo.url)">{{storyInfo.title}}</a></div>
+	</div>
+	
+	<!-- import JavaScript libraries -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script src="consumeWebService.js"></script>
+</body>
+<!-- ASSIGNMENT refactor the dropdown options to display story titles -->
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='lessonsApp'>
+    <head>
+        <meta charset="UTF-8">
+        <title>intermediate Angular lessons</title>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body ng-controller='lessonsCtrl'>
+        <div id='container'>
+            <div id='header'>
+                Angular Lessons
+            </div>
+            <div id='menu'>
+                <!--
+                    on the left side
+                    on ng-click change the iframe src
+                -->
+                <ul>
+                    <!-- use ng-repeat -->
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                </ul>
+            </div>
+            <div id='content'>
+                <!-- on the right side-->
+            <iframe src="{{lessonurl}}" frameborder="0"></iframe>
+            </div>
+            <div id='footer'>
+                Copyright © joe kirkbride
+            </div>
+        </div>
+        <script type='application/javascript' src='assets/angular.min.js'></script>
+        <script type='application/javascript' src='assets/script.js'></script>
+    </body>
+</html>

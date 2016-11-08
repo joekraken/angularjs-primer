@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>basic routing</title>
+    </head>
+    <body ng-app="routingApp">
+        <div>
+            <ul>
+                <li><a href='#/'>home</a></li>
+                <li><a href='#about'>about</a></li>
+                <li><a href='#contact'>contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <div ng-view></div>            
+        </div>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js'></script>
+        <!--<script src="scripts/angular.min.js"></script>-->
+        <script src="scripts/angular-route.min.js"></script>
+        <script src="app.js"></script>
+        <script src='scripts/svcs.js'></script>
+        <script src='scripts/ctrls.js'></script>
+    </body>
+</html>

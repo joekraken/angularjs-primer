@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<!-- the ng-app directive provides scope where Angular is available on the markup -->
+<html>
+<head>
+    <title>AngularJS Data Binding</title>
+</head>
+<body>
+    <!-- ng-app directive give scope where Angular is applied and available -->
+    <div ng-app>
+		<h2>Data binding using ng-model, ng-bind, and the brackets {{ }}</h2>
+        <label>Input text :</label>
+        <!-- ng-model is like an object reference to input called 'yourName'' -->
+        <input type="text" ng-model="yourName" placeholder="start typing here" />
+        <br/>
+        <!-- Data Binding using {{ }} to the 'yourName'' input -->
+        <p>Realtime output : {{yourName}}<p>
+        <br/>
+        <!-- Data Binding with ng-bind -->
+        <p>You're typing : <span ng-bind="yourName"></span></p>
+    </div>
+    <br/>
+    <!-- outside the scope of Angular and ng-app -->
+    <div>
+        <h2>Data binding fails when outside of ng-app scope.</h2>
+		<input type="text" ng-model="somevalue" placeholder="enter text"/>
+		<br/>
+		<p>{{somevalue}}</p>
+    </div>
+    <!-- AngularJS library from a CDN, What is a CDN? -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.5/angular.min.js"></script>-->
+    <!-- local AngularJS library -->
+    <script src="../../scripts/angular.min.js"></script>
+</body>
+</html>

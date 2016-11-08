@@ -1,0 +1,22 @@
+#menu {
+    float: left;
+    max-width: 110px;
+    padding: 1em;
+    padding-right: 2em;
+    margin: 0;
+    border-right: 1px solid gray;    
+}
+
+#content {
+    margin-left: 120px;
+    /*border-left: 1px solid gray;*/
+    padding: 0.5em;
+}
+
+#header, #footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
