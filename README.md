@@ -13,8 +13,8 @@ These lessons are broken down to simple code snippets, it is not a guide to crea
 ---
 # demos
 - Todo List : simple Angular app
-- Shopping Cart : introduction to controllers
-- Quiz App : refactor using best practices
+- Shopping Cart : basic controllers
+- Quiz App : assignment - code using best practices
 
 ---
 # license
