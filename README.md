@@ -14,7 +14,7 @@ These lessons are broken down to simple code snippets, it is not a guide to crea
 # demos
 - Todo List : simple Angular app
 - Shopping Cart : basic controllers
-- Quiz App : assignment - code using best practices
+- Quiz App : assignment to refactor using best practices
 
 ---
 # license
