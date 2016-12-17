@@ -7,13 +7,13 @@ These lessons are broken down to simple code snippets, it is not a guide to crea
 # chapters
 - ch.1 The basic lessons provide a core foundation.
 - ch.2 The intermediate lessons provide basics of build an application
-- ch.3 The advanced topics are currently under contruction
+- (backlog) ch.3 The advanced topics <under contruction>
 
 
 ---
 # demos
-- Todo List : simple Angular app
-- Shopping Cart : basic controllers
+- Todo List : a template application
+- Shopping Cart : sample code for controllers
 - Quiz App : assignment to refactor using best practices
 
 ---
