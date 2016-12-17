@@ -13,8 +13,8 @@ These lessons are broken down to simple code snippets, it is not a guide to crea
 ---
 # demos
 - Todo List : a template application
-- Shopping Cart : sample code for controllers
-- Quiz App : assignment to refactor using best practices
+- Shopping Cart : code examples using controllers
+- Quiz App : assignment, refactor the code using best practices
 
 ---
 # license
