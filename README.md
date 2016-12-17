@@ -7,7 +7,7 @@ These lessons are broken down to simple code snippets, it is not a guide to crea
 # chapters
 - ch.1 The basic lessons provide a core foundation.
 - ch.2 The intermediate lessons provide basics of build an application
-- (backlog) ch.3 The advanced topics <'under contruction>
+- ch.3 The advanced topics >>under construction<<
 
 
 ---
