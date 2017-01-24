@@ -53,16 +53,19 @@ These lessons are intended as an introduction to Angular.
 
 # data binding
 ```
-ability to share and couple data between HTML pages and JavaScript code
-- ng-model : for 2-way data binding, used for sharing data between HTML and JavaScript
-- ng-bind : for 1-way data binding, used to initialize data in HTML markup page
+ability to manipulate data between HTML pages and JavaScript code
+- **ng-model** : for 2-way data binding, used for sharing data between HTML and JavaScript
+- **ng-bind** : for 1-way data binding, used to initialize data in HTML markup page
 ```
 # handlebars
 ```
-synatx is in HTML markup is
-- {{ expression }}
-Angular will evaluate expressions with in the double-curly brackets
-Expressions can be equations, conditional statements, function calls, and/or display a $scope variable.
+called mustaches or double brackets is used like 1-way binding
+syntax:
+**{{ *expression* }}**
+Angular will evaluate *expressions* such as equations, conditional statements, function calls, and/or display a $scope variable.
+unlike ng-bind, expressions can be more useful and embedded in the HTML markup
+example:
+**<div class=".col-md-{{i+1}}"> hi </div>**
 ```
 
 
