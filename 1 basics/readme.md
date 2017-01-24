@@ -65,7 +65,7 @@ called mustaches or double brackets is used like 1-way binding
 Angular will evaluate expressions such as equations, conditional statements, function calls, and/or display a $scope variable.
 unlike ng-bind, expressions can be more useful and embedded in the HTML markup
 - example :
-<div class=".col-md-{{i+1}}"> hi </div>**
+<div class=".col-md-{{i+1}}"> hi </div>
 ```
 
 
